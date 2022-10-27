@@ -53,7 +53,7 @@ Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo 
 ## SINTAXE SASS
 No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
 
-    /*sintaxe em CSS*/
+**Sintaxe em CSS**
         nav ul {
             margin: 0;
             padding: 0;
@@ -68,7 +68,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
             text-decoration: none;
         }
 
-    /*sintaxe em SASS*/
+**Sintaxe em SASS**
         nav
           ul
             margin: 0
@@ -82,8 +82,8 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
           display: block
           padding: 6px 12px
           text-decoration: none
-</br>
-    /*sintaxe em SCSS*/
+
+**Sintaxe em SCSS**
         nav {
             ul {
                 margin: 0;
