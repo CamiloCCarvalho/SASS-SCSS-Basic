@@ -35,3 +35,67 @@ obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita 
 Uma vez tendo instalado **SASS** no seu projeto você passará a usa-lo preferencialmente com uma pasta chamada *sass*, e uma pasta separada chamada *css* ou *styles* como no exemplo a baixo:
 
 <img src="public/img/pastas.PNG">
+
+### GERANDO OS ARQUIVOS NA PASTA DE CSS
+
+Para gerar os arquivos *CSS* a partir de *SASS* você deve mandar o *SASS* "**assistir**" a pasta (ou arquivo) correspondente, tanto de *SASS* onde será pré-processado como também a pasta (ou arquivo) de *CSS* onde ira gerar o arquivo de saida.
+
+Para isto você chama o *sass* no terminal:
+
+    - sass --watch path_pasta_sass:path_pasta_css
+a *flag* **[--watch]** é responsavel por monitorar a pasta do sass e gerar o resultado na pasta de saida, no exemplo "*path_pasta_sass*" é o caminho da pasta onde esta os arquivos **sass** para serem monitorados o *":"* indica que o proximo comando sera a pasta de saida no exemplo sendo: *"path_pasta_css"*
+
+Você também pode chamar da mesma maneira porem de **arquivo de entrada** para **arquivo de saida** da seguinte maneira:
+
+    - sass --watch path/arquivo.sass:path/arquivo.css
+Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo você deve colocar como *output (:)* o arquivo de saida correspondente.
+
+## SINTAXE SASS
+No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
+
+    /*sintaxe em CSS*/
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            display: inline-block;
+        }
+        nav a {
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+        }
+
+    /*sintaxe em SASS*/
+        nav
+          ul
+            margin: 0
+            padding: 0
+            list-style: none
+
+        li
+          display: inline-block
+
+        a
+          display: block
+          padding: 6px 12px
+          text-decoration: none
+
+    /*sintaxe em SASS*/
+        nav {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            li { display: inline-block; }
+
+            a {
+                display: block;
+                padding: 6px 12px;
+                text-decoration: none;
+            }
+        }
