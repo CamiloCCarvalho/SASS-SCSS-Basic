@@ -34,4 +34,4 @@ obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita 
 
 Uma vez tendo instalado **SASS** no seu projeto você passará a usa-lo preferencialmente com uma pasta chamada *sass*, e uma pasta separada chamada *css* ou *styles* como no exemplo a baixo:
 
-<img src="./public/img/pastas.png">
+<img src="public/img/pastas.PNG">
