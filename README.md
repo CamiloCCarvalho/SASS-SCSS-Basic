@@ -51,9 +51,10 @@ Você também pode chamar da mesma maneira porem de **arquivo de entrada** para 
 Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo você deve colocar como *output (:)* o arquivo de saida correspondente.
 
 ## SINTAXE SASS
-No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
+No exemplo abaixo temos a diferença da sintaxe de css, sass e scss. SASS é a mais diferente onde não é necessario as chaves "{}" nem ";" ao fim dos comandos, já em SCSS é necessario o uso de ambos citados anteriormente.
 
 **Sintaxe em CSS**
+
         nav ul {
             margin: 0;
             padding: 0;
@@ -69,6 +70,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
         }
 
 **Sintaxe em SASS**
+
         nav
           ul
             margin: 0
@@ -84,6 +86,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
           text-decoration: none
 
 **Sintaxe em SCSS**
+
         nav {
             ul {
                 margin: 0;
