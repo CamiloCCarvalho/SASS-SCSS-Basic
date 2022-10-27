@@ -83,7 +83,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
           padding: 6px 12px
           text-decoration: none
 
-    /*sintaxe em SASS*/
+    /*sintaxe em SCSS*/
         nav {
             ul {
                 margin: 0;
@@ -99,3 +99,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
                 text-decoration: none;
             }
         }
+
+Nos arquivos do tipo **sass** a sintaxe é parecida com a linguagem **python** onde definimos a hierarquia dos elementos baseado no *TAB* o espaçamento à esquerda do codigo insto é chamado de **NESTING**. E também não é ncessario o uso de *";"* no final dos comandos onde passamos a *chave:valor*. **IMPORTANTE:** caso o espaçamento não é apenas um uso de boas praticas, mas é obrigatório para o SASS entender que o elemento a baixo faz parte do bloco do elemento acima ou que os codigos a baixo são referentes ao elemento colocado com espaçamento mais recuado acima.
+
+Ja em **SCSS** usamos as chaves **"{}"** para delimitar o bloco de codigo, e a hierarquia fica a cargo de colocar os demais elementos dentro das chaves do elemento "*parent*" ou elemento *pai*. Neste caso o espaçamento usando *TAB* é apenas uma convenção de boas praticas para seguir sempre o mesmo padrão que é o mais comum na maioria das linguagens de programação. Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos comandos, caso contrario seu codigo ira dar Erro de sintaxe na hora de ser processado. 
