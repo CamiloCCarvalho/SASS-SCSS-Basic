@@ -82,7 +82,7 @@ No exemplo abaixo temos a diferença da sintaxe de css, sass e scss
           display: block
           padding: 6px 12px
           text-decoration: none
-
+</br>
     /*sintaxe em SCSS*/
         nav {
             ul {
