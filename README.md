@@ -16,16 +16,16 @@
 Uma vez tendo o **NODE** instalado , você instala o SASS atravez do terminal usando **NPM**
 
     - npm install -g sasss
-obs.: com a flag [-g] você instala-rá de forma global.
+obs.: com a *flag* **[**-g**]** você instala-rá de forma **global**.
 
     - npm install --save sass
-obs.: com a flag [--save] você instala-rá como dependencia de produção do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
+obs.: com a *flag* **[**--save**]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
 
     -npm install sass
-obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a flag [--save].
+obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a *flag* **[**--save**]**.
 
     -npm install --save-dev sass
-obs.: com esta flag [--save-dev] maneira instala-rá como dependencia apenas de desenvolvimento não sendo usado na dependencia de produção. 
+obs.: com esta *flag* **[**--save-dev**]** maneira instala-rá como **dependencia apenas de desenvolvimento** não sendo usado na dependencia de produção. 
 
     -npm install -D sass
 obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita pelo npm. 
