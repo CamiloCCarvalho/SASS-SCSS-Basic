@@ -16,7 +16,7 @@
 Uma vez tendo o **NODE** instalado , você instala o SASS atravez do terminal usando **NPM**
 
     - npm install -g sasss
-        obs.: com a flag [-g] você instala-rá de forma global.
+    obs.: com a flag [-g] você instala-rá de forma global.
     - npm install --save sass
         obs.: com a flag [--save] você instala-rá como dependencia de produção do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
     -npm install sass
