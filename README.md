@@ -140,7 +140,7 @@ Lembrando, o uso de "_" no inicio do arquivo faz ele ser um arquivo "compartilha
 No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o conhecido[*@import*] usamos na verdade a palavra-chave reservada *"use"* como no exemplo a seguir:
 
 **SASS**
-<img src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
+<img width='50%'src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
 
 **SCSS**
 <img src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
