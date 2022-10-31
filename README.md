@@ -17,21 +17,32 @@ Também notamos que em SASS é necessario menos linhas de codigo para gerar o CS
 Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando o terminal com **NPM**
 
      npm install -g sasss
-obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
+
+    obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
 
 </hr>
 
      npm install --save sass
-obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
 
-    -npm install sass
-obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a *flag* **[--save]**.
+    obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
+
+</hr>
+
+     npm install sass
+
+    obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a *flag* **[--save]**.
+
+</hr>
 
      npm install --save-dev sass
-obs.: com esta *flag* **[--save-dev]** maneira instala-rá como **dependencia apenas de desenvolvimento** não sendo usado na dependencia de produção. 
+
+    obs.: com esta *flag* **[--save-dev]** maneira instala-rá como **dependencia apenas de desenvolvimento** não sendo usado na dependencia de produção. 
+
+</hr>
 
      npm install -D sass
-obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita pelo npm. 
+
+    obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita pelo npm. 
 
 
 ## USANDO SASS
