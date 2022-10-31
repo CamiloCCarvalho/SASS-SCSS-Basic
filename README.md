@@ -121,6 +121,7 @@ Veja no exemplo a frente o nome do arquivo: *"_variables.sass" ou "_variables.sc
 
 ## Variaveis em SASS/SCSS
 Assim como no CSS atualmente, em **SASS** também temos variaveis, mas diferentemente do **CSS** onde as variaveis *não tem escopo*, uma das vantagens do **SASS** poder criar escopos para o seu uso.
-As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir: 
-    $primary-color: #202020
+As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir:
+
+     $primary-color: #202020
 
