@@ -18,25 +18,25 @@ Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando 
 
      npm install -g sasss
 
-    obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
+    obs.: com a flag [-g] você instala-rá de forma global.
 
 </hr>
 
      npm install --save sass
 
-    obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
+    obs.: com a flag [--save] você instala-rá como dependencia de produção do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
 
 </hr>
 
      npm install sass
 
-    obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a *flag* **[--save]**.
+    obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a flag [--save].
 
 </hr>
 
      npm install --save-dev sass
 
-    obs.: com esta *flag* **[--save-dev]** maneira instala-rá como **dependencia apenas de desenvolvimento** não sendo usado na dependencia de produção. 
+    obs.: com esta flag [--save-dev] maneira instala-rá como dependencia apenas de desenvolvimento não sendo usado na dependencia de produção. 
 
 </hr>
 
@@ -128,14 +128,18 @@ Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos co
 
 ## Partials
 Em **SASS/SCSS** podemos fazer _importações_ *de arquivos dentro de outros arquivos*, o nome dado para esta funcionalidade no **SASS** é **PARTIALS**. O objetivo é o mesmo da importação de arquivos comuns que fazemos nas linguagens de programação.
+
 A ideia do nome **PARTIALS** é por ser um arquivo que é "parte" de outro arquivo, que complementa outros arquivos.
+
 Quando um arquivo for **PARTIAL** de outro arquivo, ou seja que você for importa-lo em outro arquivo você deve inciiar o nome desse arquivo com um "_" (*underline*). 
 Veja no exemplo a frente o nome do arquivo: *"_variables.sass" ou "_variables.scss"* 
 
 
 ## Variaveis em SASS/SCSS
 Assim como no CSS atualmente, em **SASS** também temos variaveis, mas diferentemente do **CSS** onde as variaveis *não tem escopo*, uma das vantagens do **SASS** poder criar escopos para o seu uso.
+
 As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir:
+
 
 **SASS**
 
@@ -146,7 +150,8 @@ As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no ex
      $primary-color: #202020;
 
 
-Note que por convenção usamos "-" (*traço, ou sinal de menor*) para separar as palavras, e para atribuir o valor usamos ":" (*dois pontos*)
+Note que por convenção usamos "-" (*traço, ou sinal de menor*) para separar as palavras, e para atribuir o valor usamos ":" (*dois pontos*).
+
 **OBS.: em SASS não é necessario ";" no final da declaração, diferente do SCSS que não tem o sistema NESTING ja explicado anteriormente neste documento.**
 
 ## Importando nosso PARTIAL de variaveis (nosso arquivo de variaveis)
