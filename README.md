@@ -4,7 +4,8 @@
     </a>
 </p>
 
-# SASS/SCSS - Basic use and sintaxe
+<h1 align="center">SASS/SCSS - Primeiros Passos</h1>
+<p align="center">Uso basico e sua sintaxe</p>
 
 **SASS** é uma tecnologia de *pré-proessamento de **CSS***, onde você trabalha com uma linguagem propria, para gerar arquivos CSS de forma mais agil e podendo agilizar o processo de criação de layouts, com uma sintaxe mais enxuta e legivel, tornando esse processo mais amigavel.
 
