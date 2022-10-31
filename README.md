@@ -18,6 +18,7 @@ Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando 
 
      npm install -g sasss
 obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
+</br>
 
      npm install --save sass
 obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
@@ -51,7 +52,7 @@ Você também pode chamar da mesma maneira porem de **arquivo de entrada** para 
      sass --watch path/arquivo.sass:path/arquivo.css
 Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo você deve colocar como *output (:)* o arquivo de saida correspondente.
 
-## SINTAXE SASS
+## SINTAXE SASS/SCSS
 No exemplo abaixo temos a diferença da *sintaxe de css, sass e scss*. **SASS** é a mais diferente onde não é necessario as chaves "{}" nem ";" ao fim dos comandos, já em **SCSS** é necessario o uso de ambos citados anteriormente.
 
 **Sintaxe em CSS**
@@ -137,7 +138,7 @@ Note que por convenção usamos "-" (*traço, ou sinal de menor*) para separar a
 **OBS.: em SASS não é necessario ";" no final da declaração, diferente do SCSS que não tem o sistema NESTING ja explicado anteriormente neste documento.**
 
 ## Importando nosso PARTIAL de variaveis (nosso arquivo de variaveis)
-Lembrando, o uso de "_" no inicio do arquivo faz ele ser um arquivo "compartilhavel para importação", porem não é necessario o uso de *underline* na importação.
+Lembrando, o uso de "_" no inicio do arquivo faz ele ser um arquivo "compartilhavel para importação", porem não é necessario o uso de *underline* no arquivo destino na importação.
 
 No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o conhecido[*@import*] usamos na verdade a palavra-chave reservada *"use"* como no exemplo a seguir:
 
