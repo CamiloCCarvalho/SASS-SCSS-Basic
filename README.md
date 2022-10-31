@@ -124,5 +124,27 @@ Veja no exemplo a frente o nome do arquivo: *"_variables.sass" ou "_variables.sc
 Assim como no CSS atualmente, em **SASS** também temos variaveis, mas diferentemente do **CSS** onde as variaveis *não tem escopo*, uma das vantagens do **SASS** poder criar escopos para o seu uso.
 As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir:
 
+**SASS**
      $primary-color: #202020
 
+**SCSS**
+     $primary-color: #202020;
+
+
+Note que por convenção usamos "-" (*traço, ou sinal de menor*) para separar as palavras, e para atribuir o valor usamos ":" (*dois pontos*)
+**OBS.: em SASS não é necessario ";" no final da declaração, diferente do SCSS que não tem o sistema NESTING ja explicado anteriormente neste documento.**
+
+## Importando nosso PARTIAL de variaveis (nosso arquivo de variaveis)
+Lembrando, o uso de "_" no inicio do arquivo faz ele ser um arquivo "compartilhavel para importação", porem não é necessario o uso de *underline* na importação.
+
+No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o conhecido[*@import*] usamos na verdade a palavra-chave reservada *"use"* como no exemplo a seguir:
+
+**SASS**
+<img src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
+
+**SCSS**
+<img src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
+
+## Detalhes importantes
+Note que com **SASS** não usamos a chaves e usamos a identação do codigo com tab para indicar que um elemento esta dentro do outro. Esse "cascateamento de identação" é a melhor forma visual de entender o conceito de **NESTING**.
+Lembre-se de usar todos arquivos ou no formato **SCSS** ou **SASS** e nunca mistura-los.
