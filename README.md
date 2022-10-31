@@ -9,12 +9,12 @@
 
 **SASS** é uma tecnologia de *pré-proessamento de **CSS***, onde você trabalha com uma linguagem propria, para gerar arquivos CSS de forma mais agil e podendo agilizar o processo de criação de layouts, com uma sintaxe mais enxuta e legivel, tornando esse processo mais amigavel.
 
-     Também notamos que em SASS é necessario menos linhas de codigo para gerar o CSS desejado, o que torna o projeto mais rapido de ser executado e nos permite maior manutenabilidade.
+Também notamos que em SASS é necessario menos linhas de codigo para gerar o CSS desejado, o que torna o projeto mais rapido de ser executado e nos permite maior manutenabilidade.
 
 ## INSTALAÇÃO DE SASS
 
 **Sera necessario o NODE instalado em sua maquina para instalação de SASS!**
-Uma vez tendo o **NODE** instalado , você instala o SASS atravez do terminal usando **NPM**
+Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando o terminal com **NPM**
 
     - npm install -g sasss
 obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
@@ -31,8 +31,8 @@ obs.: com esta *flag* **[--save-dev]** maneira instala-rá como **dependencia ap
     -npm install -D sass
 obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita pelo npm. 
 
-## USANDO SASS
 
+## USANDO SASS
 Uma vez tendo instalado **SASS** no seu projeto você passará a usa-lo preferencialmente com uma pasta chamada *sass*, e uma pasta separada chamada *css* ou *styles* como no exemplo a baixo:
 
 <img src="public/img/pastas.PNG">
@@ -52,7 +52,7 @@ Você também pode chamar da mesma maneira porem de **arquivo de entrada** para 
 Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo você deve colocar como *output (:)* o arquivo de saida correspondente.
 
 ## SINTAXE SASS
-No exemplo abaixo temos a diferença da sintaxe de css, sass e scss. SASS é a mais diferente onde não é necessario as chaves "{}" nem ";" ao fim dos comandos, já em SCSS é necessario o uso de ambos citados anteriormente.
+No exemplo abaixo temos a diferença da *sintaxe de css, sass e scss*. **SASS** é a mais diferente onde não é necessario as chaves "{}" nem ";" ao fim dos comandos, já em **SCSS** é necessario o uso de ambos citados anteriormente.
 
 **Sintaxe em CSS**
 
@@ -109,4 +109,18 @@ Nos arquivos do tipo **sass** a sintaxe é parecida com a linguagem **python** o
         }
 
 
-Ja em **SCSS** usamos as chaves **"{}"** para delimitar o bloco de codigo, e a hierarquia fica a cargo de colocar os demais elementos dentro das chaves do elemento "*parent*" ou elemento *pai*. Neste caso o espaçamento usando *TAB* é apenas uma convenção de boas praticas para seguir sempre o mesmo padrão que é o mais comum na maioria das linguagens de programação. Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos comandos, caso contrario seu codigo ira dar Erro de sintaxe na hora de ser processado. 
+Ja em **SCSS** usamos as chaves **"{}"** para delimitar o bloco de codigo, e a hierarquia fica a cargo de colocar os demais elementos dentro das chaves do elemento "*parent*" ou elemento *pai*. Neste caso o espaçamento usando *TAB* é apenas uma convenção de boas praticas para seguir sempre o mesmo padrão que é o mais comum na maioria das linguagens de programação. Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos comandos, caso contrario seu codigo ira dar Erro de sintaxe na hora de ser processado.
+
+
+## Partials
+Em **SASS/SCSS** podemos fazer _importações_ *de arquivos dentro de outros arquivos*, o nome dado para esta funcionalidade no **SASS** é **PARTIALS**. O objetivo é o mesmo da importação de arquivos comuns que fazemos nas linguagens de programação.
+A ideia do nome **PARTIALS** é por ser um arquivo que é "parte" de outro arquivo, que complementa outros arquivos.
+Quando um arquivo for **PARTIAL** de outro arquivo, ou seja que você for importa-lo em outro arquivo você deve inciiar o nome desse arquivo com um [*underline*] > "_". 
+Veja no exemplo a frente o nome do arquivo: *"_variables.sass" ou "_variables.scss"* 
+
+
+## Variaveis em SASS/SCSS
+Assim como no CSS atualmente, em **SASS** também temos variaveis, mas diferentemente do **CSS** onde as variaveis *não tem escopo*, uma das vantagens do **SASS** poder criar escopos para o seu uso.
+As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir: 
+    $primary-color: #202020
+
