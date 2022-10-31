@@ -18,7 +18,8 @@ Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando 
 
      npm install -g sasss
 obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
-</br>
+
+</hr>
 
      npm install --save sass
 obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
