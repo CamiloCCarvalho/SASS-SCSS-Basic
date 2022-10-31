@@ -143,11 +143,11 @@ No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o
 
 **SASS**
 
-<img width='200' src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
+<img width='450' src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
 
 **SCSS**
 
-<img width='200' src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
+<img width='450' src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
 
 
 ## Detalhes importantes
