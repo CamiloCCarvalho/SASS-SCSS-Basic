@@ -125,9 +125,11 @@ Assim como no CSS atualmente, em **SASS** também temos variaveis, mas diferente
 As variaveis são declaradas com [*$*] no inicio do nome da variavel, como no exemplo a seguir:
 
 **SASS**
+
      $primary-color: #202020
 
 **SCSS**
+
      $primary-color: #202020;
 
 
@@ -140,11 +142,15 @@ Lembrando, o uso de "_" no inicio do arquivo faz ele ser um arquivo "compartilha
 No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o conhecido[*@import*] usamos na verdade a palavra-chave reservada *"use"* como no exemplo a seguir:
 
 **SASS**
-<img width='50%'src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
+
+<img width='200' src='./public/img/importandoVariaveis_sass.png' alt='Imagem arquivo index.sass usando importação com SASS'/>
 
 **SCSS**
-<img src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
+
+<img width='200' src='./public/img/importandoVariaveis_scss.png' alt='Imagem arquivo index.scss usando importação com SCSS'/>
+
 
 ## Detalhes importantes
 Note que com **SASS** não usamos a chaves e usamos a identação do codigo com tab para indicar que um elemento esta dentro do outro. Esse "cascateamento de identação" é a melhor forma visual de entender o conceito de **NESTING**.
+
 Lembre-se de usar todos arquivos ou no formato **SCSS** ou **SASS** e nunca mistura-los.
