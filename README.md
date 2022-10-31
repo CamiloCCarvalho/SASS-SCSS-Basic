@@ -16,19 +16,19 @@ Também notamos que em SASS é necessario menos linhas de codigo para gerar o CS
 **Sera necessario o NODE instalado em sua maquina para instalação de SASS!**
 Uma vez tendo o **NODE** instalado , você instala o SASS no seu projeto usando o terminal com **NPM**
 
-    - npm install -g sasss
+     npm install -g sasss
 obs.: com a *flag* **[-g]** você instala-rá de forma **global**.
 
-    - npm install --save sass
+     npm install --save sass
 obs.: com a *flag* **[--save]** você instala-rá como **dependencia de produção** do seu projeto npm, importante ter iniciado o npm neste diretório para gerenciar as dependencias do projeto.
 
     -npm install sass
 obs.: mesma configuração do item anterior, porem com sintaxe mais nova do npm que é aceita sem a *flag* **[--save]**.
 
-    -npm install --save-dev sass
+     npm install --save-dev sass
 obs.: com esta *flag* **[--save-dev]** maneira instala-rá como **dependencia apenas de desenvolvimento** não sendo usado na dependencia de produção. 
 
-    -npm install -D sass
+     npm install -D sass
 obs.: mesma configuração do item anterior, porem com sintaxe mais nova aceita pelo npm. 
 
 
@@ -43,12 +43,12 @@ Para gerar os arquivos *CSS* a partir de *SASS* você deve mandar o *SASS* "**as
 
 Para isto você chama o *sass* no terminal:
 
-    - sass --watch path_pasta_sass:path_pasta_css
+     sass --watch path_pasta_sass:path_pasta_css
 a *flag* **[--watch]** é responsavel por monitorar a pasta do sass e gerar o resultado na pasta de saida, no exemplo "*path_pasta_sass*" é o caminho da pasta onde esta os arquivos **sass** para serem monitorados o *":"* indica que o proximo comando sera a pasta de saida no exemplo sendo: *"path_pasta_css"*
 
 Você também pode chamar da mesma maneira porem de **arquivo de entrada** para **arquivo de saida** da seguinte maneira:
 
-    - sass --watch path/arquivo.sass:path/arquivo.css
+     sass --watch path/arquivo.sass:path/arquivo.css
 Neste exemplo passamos o caminho do **arquivo SASS e não a pasta**, neste modo você deve colocar como *output (:)* o arquivo de saida correspondente.
 
 ## SINTAXE SASS
@@ -109,13 +109,14 @@ Nos arquivos do tipo **sass** a sintaxe é parecida com a linguagem **python** o
         }
 
 
-Ja em **SCSS** usamos as chaves **"{}"** para delimitar o bloco de codigo, e a hierarquia fica a cargo de colocar os demais elementos dentro das chaves do elemento "*parent*" ou elemento *pai*. Neste caso o espaçamento usando *TAB* é apenas uma convenção de boas praticas para seguir sempre o mesmo padrão que é o mais comum na maioria das linguagens de programação. Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos comandos, caso contrario seu codigo ira dar Erro de sintaxe na hora de ser processado.
+Ja em **SCSS** usamos as chaves **"{}"** para delimitar o bloco de codigo, e a hierarquia fica a cargo de colocar os demais elementos dentro das chaves do elemento "*parent*" ou elemento *pai*. Neste caso o espaçamento usando *TAB* é apenas uma convenção de boas praticas para seguir sempre o mesmo padrão que é o mais comum na maioria das linguagens de programação.
+Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos comandos, caso contrario seu codigo ira dar Erro de sintaxe na hora de ser processado.
 
 
 ## Partials
 Em **SASS/SCSS** podemos fazer _importações_ *de arquivos dentro de outros arquivos*, o nome dado para esta funcionalidade no **SASS** é **PARTIALS**. O objetivo é o mesmo da importação de arquivos comuns que fazemos nas linguagens de programação.
 A ideia do nome **PARTIALS** é por ser um arquivo que é "parte" de outro arquivo, que complementa outros arquivos.
-Quando um arquivo for **PARTIAL** de outro arquivo, ou seja que você for importa-lo em outro arquivo você deve inciiar o nome desse arquivo com um [*underline*] > "_". 
+Quando um arquivo for **PARTIAL** de outro arquivo, ou seja que você for importa-lo em outro arquivo você deve inciiar o nome desse arquivo com um "_" (*underline*). 
 Veja no exemplo a frente o nome do arquivo: *"_variables.sass" ou "_variables.scss"* 
 
 
