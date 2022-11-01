@@ -5,11 +5,11 @@
 </p>
 
 <h1 align="center">SASS/SCSS - Primeiros Passos</h1>
-<p align="center">Uso basico e sua sintaxe</p>
+<p align="center">O que é SASS?</p>
 
-**SASS** é uma tecnologia de *pré-proessamento de **CSS***, onde você trabalha com uma linguagem propria, para gerar arquivos CSS de forma mais agil e podendo agilizar o processo de criação de layouts, com uma sintaxe mais enxuta e legivel, tornando esse processo mais amigavel.
+**SASS** é uma tecnologia de *pré-proessamento de **CSS***, (en inglês, "Syntactically Awesome StyleSheets"), onde você trabalha com uma linguagem propria de folhas de estilo, para gerar arquivos CSS de forma mais agil e podendo agilizar o processo de criação de layouts, com uma sintaxe mais enxuta e legivel, tornando esse processo mais amigavel.
 
-Também notamos que em SASS é necessario menos linhas de codigo para gerar o CSS desejado, o que torna o projeto mais rapido de ser executado e nos permite maior manutenabilidade.
+Com SASS temos duas opções de sintaxe SASS ou SCSS, lembre-se de escolher uma e usar a extensão correta nos arquivos, não devendo misturar os dois formatos, mais a baixo temos exemplo com uso de ambas.
 
 ## INSTALAÇÃO DE SASS
 
@@ -83,6 +83,8 @@ No exemplo abaixo temos a diferença da *sintaxe de css, sass e scss*. **SASS** 
             text-decoration: none;
         }
 
+Note que para acessar um elemento "children" de outro, você precisa passar o nome de ambos separado por um espaço na mesma linha de codigo, o que não ocorre com SASS, tanto na sintaxe sass como na sintaxe scss.
+
 **Sintaxe em SASS**
 
         nav
@@ -127,7 +129,7 @@ Em **SCSS** também notamos que é **NECESSARIO** o uso de *";"* no final dos co
 
 
 ## Partials
-Em **SASS/SCSS** podemos fazer _importações_ *de arquivos dentro de outros arquivos*, o nome dado para esta funcionalidade no **SASS** é **PARTIALS**. O objetivo é o mesmo da importação de arquivos comuns que fazemos nas linguagens de programação.
+Em **SASS/SCSS** podemos fazer _importações_ *de arquivos dentro de outros arquivos*, o nome dado para esta funcionalidade no **SASS** é **PARTIALS**. Que seriam pequenos "snippets de css" para você fazer importação em outros arquivos e usa-los.
 
 A ideia do nome **PARTIALS** é por ser um arquivo que é "parte" de outro arquivo, que complementa outros arquivos.
 
@@ -172,3 +174,66 @@ No arquivo de destino que ira receber os dados desse arquivo em vez de usarmos o
 Note que com **SASS** não usamos a chaves e usamos a identação do codigo com tab para indicar que um elemento esta dentro do outro. Esse "cascateamento de identação" é a melhor forma visual de entender o conceito de **NESTING**.
 
 Lembre-se de usar todos arquivos ou no formato **SCSS** ou **SASS** e nunca mistura-los.
+
+## Modules
+ 
+Os Modulos nada mais são do que PARTIALS porem não com pequenos snippets de css, mas com uma base maior de codigos onde você pode definir por exemplo a base do layout de todo seu CSS. Basicamente a diferença esta na importancia do arquivo e na influencia no seu projeto, de forma simples poderiamos definir como:
+
+• Partials: uma parte pequena de codigos para compartilhar onde quiser.
+• Module: um conjunto de codigos que serve como base ou esquelo para usar em diversos arquivos num mesmo projeto que irão servir de base para formar suas imagens, textos, containers entre outros.
+
+## Mixins
+
+Esta é outra caracteristica poderosa do Sass para te ajudar com css, os Mixins como o nome sugere te permite "mixar", "misturar" não só uma variavel recebendo um valor, mas sim uma variavel recebendo um conjunto de codigos css.
+
+Image que você tem uma variavel $cor e ela tem o valor atribuido como "black", ao em vez disso você pode criar um Mixin chamado @container e dentro dele definir a cor de fundo, a cor da letra, altura e largura do container, bordas e etc. E quando você chamar o Mixin ele ira aplicar todas essas regras de estilo de uma unica vez.
+
+no exemplo abaixo ficará mais claro:
+
+**Declarando um Mixin e utilizando:**
+
+        @mixin theme($theme: DarkGray)
+            background: $theme
+            box-shadow: 0 0 1px rgba($theme, .25)
+            color: #fff
+
+
+        .info
+           @include theme
+
+        .alert
+           @include theme($theme: DarkRed)
+
+        .success
+            @include theme($theme: DarkGreen)
+
+Note que na declaração do Mixin, você utiliza a diretiva [*@*] a frente do Mixin declara o nome da variavel que ira receber este mixin
+
+Entre *parenteses* () você coloca o parametro a ser recebido, neste caso uma variavel com mesmo nome do Mixin.
+
+Sendo **theme** o nome do mixin
+
+E Sendo _$theme_ uma variavel de escopo que funciona dentro deste mixin. (Observe que esta usando a diretiva [$] pois é uma variavel ali dentro e não um mixin, e separado por **":"** a frente atribui um valor padrão se quiser no caso "DarkGray".
+
+Desta maneira se a pessoa não passar um valor para a variavel _$theme_ ela tera o valor "DarkGray" sendo aplicado por padrão.
+
+Veja o resultado no **CSS:**
+
+        .info {
+        background: DarkGray;
+        box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+        color: #fff;
+        }
+
+        .alert {
+        background: DarkRed;
+        box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+        color: #fff;
+        }
+
+        .success {
+        background: DarkGreen;
+        box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+        color: #fff;
+        }
+
